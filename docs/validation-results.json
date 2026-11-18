@@ -1,0 +1,24 @@
+{
+  "sourceSyntax": {
+    "files": 56,
+    "errors": 0
+  },
+  "coreChecks": 51,
+  "pwaAdapterFakeChecks": 24,
+  "browserSourceHarnessChecks": 32,
+  "viewports": [
+    320,
+    390,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "actualNpmInstall": false,
+  "actualViteBuild": false,
+  "actualProductionOfflineTest": false,
+  "fullVitestSuite": false,
+  "fullEslintRun": false,
+  "realCloudflareTunnel": false,
+  "note": "See validation-report.md for environment, scope and remaining release checks."
+}

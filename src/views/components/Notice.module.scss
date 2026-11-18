@@ -1,0 +1,11 @@
+.notice { position: fixed; right: max(var(--page-gutter), env(safe-area-inset-right)); bottom: max(1.25rem, env(safe-area-inset-bottom)); z-index: var(--z-notice); width: min(24rem, calc(100% - 2 * var(--page-gutter))); padding: 1rem 3.25rem 1rem 1.25rem; border: 1px solid var(--color-control-border); background: var(--color-surface); border-radius: var(--radius-md); box-shadow: var(--shadow-raised); }
+.message { display: flex; gap: .75rem; align-items: flex-start; color: var(--color-text-secondary); font-size: .8125rem; }
+.message svg { color: var(--color-accent); flex-shrink: 0; margin-top: .2rem; }
+.actions { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: .9rem; }
+.actions button { min-height: 44px; padding: .6rem .85rem; font-size: .75rem; }
+.dismiss { position: absolute; right: .25rem; top: .25rem; width: 44px; height: 44px; border: 0; background: transparent; display: grid; place-items: center; color: var(--color-text-secondary); }
+.dismiss:hover { color: var(--color-accent); }
+/* Keep essential controls reachable when keyboard focus is near the bottom. */
+@media (max-width: 39.999rem) { .notice { bottom: max(.75rem, env(safe-area-inset-bottom)); } }
+
+.notice[data-placement='top'] { top: calc(var(--header-height) + 1rem); bottom: auto; }

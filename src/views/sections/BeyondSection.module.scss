@@ -1,0 +1,6 @@
+.grid { display: grid; gap: 2rem; }
+.interest { min-width: 0; padding-top: 1.5rem; border-top: 1px solid var(--color-border); }
+.icon { color: var(--color-accent); display: block; margin-bottom: 1.25rem; }
+.interest h3 { font-size: 1.15rem; }
+.interest p { margin-top: .8rem; font-size: .875rem; color: var(--color-text-secondary); max-width: 42ch; }
+@media (min-width: 40rem) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }

@@ -1,0 +1,16 @@
+.section { padding-bottom: var(--section-space); }
+.panel { display: grid; gap: 2.25rem; background: var(--color-accent-hover); color: var(--color-inverse); border-radius: var(--radius-md); padding: clamp(1.5rem, 5vw, 4rem); }
+.eyebrow { color: #c4e1d9; margin-bottom: 1.25rem; }
+.intro h2 { max-width: 16ch; font-size: clamp(1.875rem, 1.2rem + 2.7vw, 3rem); line-height: 1.12; }
+.body { margin-top: 1.25rem; max-width: 48ch; color: #d2e4de; font-size: .9375rem; }
+.actions { min-width: 0; align-self: center; }
+.email { display: flex; align-items: center; gap: .75rem; min-height: 44px; color: #fff; font-size: clamp(1.1rem, .85rem + 1vw, 1.5rem); letter-spacing: -.025em; text-decoration: none; overflow-wrap: anywhere; line-height: 1.5; }
+.email:hover { text-decoration: underline; text-underline-offset: .25em; }
+.email svg { flex-shrink: 0; }
+.buttons { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.2rem; }
+.copyStatus { min-height: 2rem; font-size: .75rem; margin-top: .5rem; color: #d2e4de; }
+.socials { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: .25rem; }
+.socials a { min-height: 44px; display: inline-flex; align-items: center; gap: .5rem; font-size: .8125rem; text-decoration: none; color: #d2e4de; }
+.socials a:hover { color: #fff; text-decoration: underline; text-underline-offset: .3em; }
+.panel :focus-visible { outline-color: #fff; }
+@media (min-width: 60rem) { .panel { grid-template-columns: 1fr 1fr; gap: 4rem; } }

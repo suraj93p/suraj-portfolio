@@ -1,0 +1,28 @@
+.hero { padding-block: clamp(3.5rem, 7vw, 6.5rem) clamp(3.5rem, 7vw, 6rem); }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 3rem; align-items: start; }
+.copy { min-width: 0; }
+.eyebrow { display: flex; align-items: center; gap: .65rem; text-transform: uppercase; letter-spacing: .12em; font-family: var(--font-mono); font-size: .6875rem; color: var(--color-text-secondary); line-height: 1.6; margin-bottom: 1.6rem; }
+.eyebrow span { display: inline-block; width: 6px; height: 6px; flex-shrink: 0; border-radius: 50%; background: var(--color-accent); }
+.copy h1 { font-size: var(--font-hero); line-height: 1.05; letter-spacing: -.055em; max-width: 14ch; font-weight: 650; }
+.copy h1 span { color: var(--color-accent); }
+.intro { font-size: clamp(.9375rem, .9rem + .25vw, 1.1rem); color: var(--color-text-secondary); line-height: 1.8; max-width: 58ch; margin-top: 1.75rem; }
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 2rem; }
+.profile { min-width: 0; background: var(--color-surface); border: 1px solid var(--color-border); box-shadow: var(--shadow-card); border-radius: var(--radius-md); padding: clamp(1.25rem, 3vw, 2rem); }
+.profileTop { display: flex; align-items: center; gap: .85rem; border-bottom: 1px solid var(--color-border); padding-bottom: 1.5rem; }
+.monogram { width: 44px; height: 44px; border: 1px solid var(--color-border); border-radius: 50%; background: var(--color-canvas); display: grid; place-items: center; color: var(--color-accent); font-size: .8125rem; font-weight: 650; letter-spacing: -.05em; }
+.profileLabel { font-family: var(--font-mono); color: var(--color-text-muted); font-size: .625rem; text-transform: uppercase; letter-spacing: .1em; }
+.profileName { font-size: .9375rem; font-weight: 650; margin-top: .15rem; }
+.facts { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 1.5rem; }
+.fact { display: flex; flex-direction: column-reverse; justify-content: flex-end; min-width: 0; padding-block: 1.65rem; gap: .55rem; }
+.fact:nth-child(-n+2) { border-bottom: 1px solid var(--color-border); }
+.fact dt { font-size: .6875rem; color: var(--color-text-muted); line-height: 1.4; }
+.fact dd { font-size: 1.05rem; font-weight: 600; line-height: 1.35; letter-spacing: -.025em; }
+.fact .number { font-size: 3.75rem; line-height: 1; font-weight: 500; color: var(--color-accent); letter-spacing: -.06em; }
+.fact:nth-child(2) { justify-content: center; }
+.fact:nth-child(2) dd { font-size: 1.05rem; }
+.role { font-size: .6875rem; color: var(--color-text-secondary); border-top: 1px solid var(--color-border); padding-block: 1rem; }
+.journey { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; color: var(--color-accent); font-size: .8125rem; text-decoration: none; font-weight: 600; }
+.journey:hover { text-decoration: underline; text-underline-offset: .3em; }
+@media (min-width: 60rem) { .grid { grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr); gap: clamp(3rem, 6vw, 5rem); } .profile { margin-top: 4.25rem; } }
+@media (min-width: 40rem) and (max-width: 59.999rem) { .profile { max-width: 36rem; } .copy h1 { max-width: 17ch; } }
+@media (max-width: 22rem) { .facts { grid-template-columns: minmax(0, 1fr); } .fact { padding-block: 1rem; border-bottom: 1px solid var(--color-border); } .actions { flex-direction: column; align-items: stretch; } }

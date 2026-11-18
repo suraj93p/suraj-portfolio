@@ -1,0 +1,3 @@
+@mixin desktop { @media (min-width: 60rem) { @content; } }
+@mixin tablet { @media (min-width: 40rem) { @content; } }
+@mixin interactive { transition: background-color var(--duration-fast) ease, color var(--duration-fast) ease, border-color var(--duration-fast) ease; }

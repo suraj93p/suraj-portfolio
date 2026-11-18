@@ -1,0 +1,6 @@
+.header { max-width: 46rem; margin-bottom: 2.75rem; }
+.eyebrowRow { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.1rem; max-width: 25rem; }
+.header h2 { max-width: 22ch; }
+.intro { max-width: 64ch; margin-top: 1rem; color: var(--color-text-secondary); font-size: 1.0625rem; }
+.compact { margin-bottom: 0; }
+@media (max-width: 39.999rem) { .header { margin-bottom: 2rem; } }

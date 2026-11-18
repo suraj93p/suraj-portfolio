@@ -1,0 +1,13 @@
+.footer { border-top: 1px solid var(--color-border); padding-block: 2rem; }
+.inner { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+.identity > p:first-child { font-size: .8125rem; font-weight: 600; }
+.identity span { color: var(--color-text-muted); font-weight: 400; }
+.copyright { font-size: .6875rem; color: var(--color-text-muted); margin-top: .35rem; }
+.controls { display: flex; gap: 1.5rem; flex-wrap: wrap; align-items: start; }
+.controls button, .controls a { display: inline-flex; align-items: center; justify-content: flex-start; gap: .5rem; min-height: 44px; background: transparent; border: 0; padding: 0; font-size: .75rem; text-decoration: none; color: var(--color-text-secondary); }
+.controls button:hover, .controls a:hover { color: var(--color-accent); text-decoration: underline; text-underline-offset: .3em; }
+.installHelp { grid-column: 1 / -1; max-width: 40rem; color: var(--color-text-muted); font-size: .6875rem; }
+.installHelp summary { cursor: pointer; min-height: 44px; padding-block: .65rem; width: fit-content; }
+.installHelp p { font-size: .75rem; max-width: 70ch; }
+.installStatus { grid-column: 1 / -1; color: var(--color-text-secondary); font-size: .75rem; }
+@media (min-width: 60rem) { .inner { grid-template-columns: 1fr auto; } }

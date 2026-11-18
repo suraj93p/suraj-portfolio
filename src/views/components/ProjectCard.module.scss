@@ -1,0 +1,11 @@
+.card { min-width: 0; padding: clamp(1.4rem, 3vw, 2.5rem); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); box-shadow: var(--shadow-card); }
+.top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 2.5rem; }
+.icon { display: grid; place-items: center; width: 48px; height: 48px; color: var(--color-accent); background: var(--color-accent-soft); border-radius: var(--radius-sm); }
+.category { font-family: var(--font-mono); color: var(--color-accent); font-size: .6875rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .7rem; }
+.card h3 { font-size: 1.65rem; max-width: 20ch; line-height: 1.2; }
+.summary { margin-block: 1rem 1.4rem; color: var(--color-text-secondary); font-size: .9375rem; }
+.details { margin-top: 2rem; }
+.detailContent { font-size: .875rem; padding-block: .25rem .75rem; }
+.detailContent dt { font-weight: 650; color: var(--color-text); margin-top: 1rem; }
+.detailContent dd { margin-top: .35rem; color: var(--color-text-secondary); }
+.links { display: flex; flex-wrap: wrap; gap: 1rem; }

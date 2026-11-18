@@ -1,0 +1,18 @@
+@media print {
+  @page { margin: 1.5cm; }
+  :root { --section-space: 1.5rem; --color-text: #000; --color-text-secondary: #222; --color-text-muted: #333; --color-accent: #111; --color-canvas: #fff; --color-surface-muted: #fff; --color-inverse: #000; }
+  html { font-size: 11px; }
+  body { background: #fff; color: #000; }
+  header, footer, .skipLink, [data-no-print], [data-pwa-notice] { display: none !important; }
+  .container { width: 100%; max-width: none; }
+  .section { border-top: 1px solid #bbb; }
+  h1, h2, h3 { break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+  [data-experience-item] { display: grid !important; break-inside: avoid-page; }
+  [data-project-card], [data-interest-card] { break-inside: avoid-page; box-shadow: none !important; }
+  details > * { display: block !important; }
+  details > summary { display: none !important; }
+  [data-contact] { background: #fff !important; color: #000 !important; border: 1px solid #bbb; }
+  [data-contact] * { color: #000 !important; }
+  a { text-decoration: none; }
+}
